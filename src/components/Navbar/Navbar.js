@@ -14,7 +14,7 @@ const Navbar = () => {
           <li>Inicio</li>
           <li>Novias</li>
           <li>Blog</li>
-          <li className={styles.cita}>Reservar</li>
+          <li>Reservar</li>
         </ul>
       </nav>
     </header>
