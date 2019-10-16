@@ -1,0 +1,6 @@
+@import "./colors.css";
+@import "./fonts.css";
+
+body {
+  background-color: var(--color-cream-1);
+}
