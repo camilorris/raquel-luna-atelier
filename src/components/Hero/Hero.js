@@ -7,7 +7,8 @@ const Hero = () => {
     <div className={styles.heroWrapper}>
       <div className={styles.heroImage}>
         <div className={styles.heroText}>
-          <h1>Diseñamos exclusivamente para ti</h1>{" "}
+          <h1>Diseñamos exclusivamente para ti</h1>
+          <p>Vestidos de novia de alta costura hechos a la medida </p>
           <button>Reserva tu cita</button>
         </div>
       </div>
