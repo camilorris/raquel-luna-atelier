@@ -1,0 +1,115 @@
+.noviasContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  h2 {
+    font-family: var(--font-miller-text-bold);
+    color: var(--color-dark-1);
+    font-size: 90px;
+    margin-top: 94px;
+    display: flex;
+    justify-content: center;
+  }
+
+  h6 {
+    font-family: var(--font-miller-text-italic);
+    color: var(--color-dark-1);
+    font-size: 36px;
+    margin: 98px 0 0 0;
+  }
+
+  p {
+    margin: 33px 0 0 0;
+    font-family: var(--font-avenir-next-regular);
+    font-size: 30px;
+    max-width: 464px;
+    color: var(--color-dark-1);
+  }
+}
+
+.dressLeft {
+  display: flex;
+  margin: 151px auto 0;
+  position: relative;
+  max-width: 1061px;
+
+  &:before {
+    content: "";
+    width: 764px;
+    height: 622px;
+    border: 3px solid var(--color-sky-1);
+    position: absolute;
+    z-index: -10;
+    right: 0;
+    top: -46px;
+  }
+
+  .dressLeftImage {
+    max-width: 424px;
+  }
+
+  .textLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 89px;
+  }
+
+  button {
+    align-self: flex-end;
+    margin: 53px 0 0 0;
+  }
+}
+
+button {
+  color: var(--color-dark-1);
+  background-color: var(--color-sky-1);
+  font-family: var(--font-miller-text-bold-italic);
+  font-size: 25px;
+  border: none;
+  padding: 9px 21px;
+  border-radius: 1px;
+  margin-top: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-sky-2);
+    transform: translateY(-7px);
+  }
+}
+
+.dressRight {
+  display: flex;
+  margin: 151px auto 0;
+  position: relative;
+  max-width: 1061px;
+  justify-content: flex-end;
+
+  &:before {
+    content: "";
+    width: 764px;
+    height: 622px;
+    border: 3px solid var(--color-sky-1);
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: -46px;
+  }
+
+  .dressRightImage {
+    max-width: 424px;
+    order: 2;
+  }
+
+  .textRight {
+    display: flex;
+    flex-direction: column;
+    margin-right: 89px;
+    max-width: 464px;
+  }
+
+  button {
+    align-self: flex-end;
+    margin: 53px 0 0 0;
+  }
+}
