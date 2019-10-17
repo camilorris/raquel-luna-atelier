@@ -11,10 +11,18 @@ const Navbar = () => {
       </div>
       <nav>
         <ul className={styles.navbar}>
-          <li>Inicio</li>
-          <li>Novias</li>
-          <li>Blog</li>
-          <li>Reservar</li>
+          <li>
+            <a href="#"> Inicio</a>
+          </li>
+          <li>
+            <a href="#">Novias</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li className={styles.reservar}>
+            <a href="#">Reservar</a>
+          </li>
         </ul>
       </nav>
     </header>
