@@ -5,8 +5,9 @@
   --font-avenir-next-demi: "Avenir-Next-Demi", Tahoma, sans-serif;
   --font-avenir-next-bold: "Avenir-Next-Bold", Tahoma, sans-serif;
   --font-miller-text-regular: "Miller-Text-Regular", Tahoma, sans-serif;
-  --font-miller-text-italic: "Miller-Text-Regular", Tahoma, sans-serif;
+  --font-miller-text-italic: "Miller-Text-Italic", Tahoma, sans-serif;
   --font-miller-text-bold-italic: "Miller-Text-Bold-Italic", Tahoma, sans-serif;
+  --font-miller-text-bold: "Miller-Text-Bold" Tahoma, sans-serif;
 }
 
 @font-face {
@@ -52,7 +53,7 @@
 @font-face {
   font-family: "Miller-Text-Regular";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-display: swap;
   src: url("~assets/fonts/Miller-Text-Regular.woff2") format("woff2");
 }
@@ -71,4 +72,12 @@
   font-weight: 700;
   font-display: swap;
   src: url("~assets/fonts/Miller-Text-Bold-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Miller-Text-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("~assets/fonts/Miller-Text-Bold.woff2") format("woff2");
 }
