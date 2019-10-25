@@ -1,0 +1,49 @@
+.blogContainer {
+  max-width: 1060px;
+  position: relative;
+  display: flex;
+  margin: 150px auto;
+
+  &:before {
+    content: "";
+    z-index: -10;
+    background-color: var(--color-sky-1);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 105px;
+  }
+
+  .lacePic {
+    max-width: 557px;
+    max-height: 833px;
+  }
+
+  .text {
+    color: var(--color-dark-1);
+    max-width: 462px;
+    margin: 140px 0 140px 43px;
+  }
+
+  h4 {
+    font-family: var(--font-miller-text-bold-italic);
+    font-size: 40px;
+    margin: 0;
+  }
+
+  p {
+    color: var(--color-dark-1);
+    font-family: var(--font-avenir-next-regular);
+    font-size: 30px;
+    margin: 24px 0 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-dark-1);
+    font-family: var(--font-avenir-next-medium);
+    font-size: 30px;
+    display: block;
+    margin-top: 110px;
+  }
+}
