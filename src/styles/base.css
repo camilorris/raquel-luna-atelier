@@ -4,3 +4,13 @@
 body {
   background-color: var(--color-cream-1);
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

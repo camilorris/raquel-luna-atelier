@@ -25,6 +25,24 @@
     max-width: 464px;
     color: var(--color-dark-1);
   }
+
+  button {
+    color: var(--color-dark-1);
+    background-color: var(--color-sky-1);
+    font-family: var(--font-miller-text-bold-italic);
+    font-size: 25px;
+    border: none;
+    padding: 9px 21px;
+    border-radius: 1px;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-sky-2);
+      transform: translateY(-7px);
+    }
+  }
 }
 
 .dressLeft {
@@ -57,24 +75,6 @@
   button {
     align-self: flex-end;
     margin: 53px 0 0 0;
-  }
-}
-
-button {
-  color: var(--color-dark-1);
-  background-color: var(--color-sky-1);
-  font-family: var(--font-miller-text-bold-italic);
-  font-size: 25px;
-  border: none;
-  padding: 9px 21px;
-  border-radius: 1px;
-  margin-top: 20px;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--color-sky-2);
-    transform: translateY(-7px);
   }
 }
 
