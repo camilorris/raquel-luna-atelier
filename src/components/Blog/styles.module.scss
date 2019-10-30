@@ -2,7 +2,7 @@
   max-width: 1060px;
   position: relative;
   display: flex;
-  margin: 150px auto;
+  margin: 150px auto 0;
 
   &:before {
     content: "";
@@ -22,7 +22,7 @@
   .text {
     color: var(--color-dark-1);
     max-width: 462px;
-    margin: 140px 0 140px 43px;
+    margin: 140px 0 115px 43px;
   }
 
   h4 {
