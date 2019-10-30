@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./styles.module.scss";
+
 import Princesa from "assets/images/princesa.png";
 import Sirena from "assets/images/sirena.png";
 import Recto from "assets/images/recto.png";
@@ -74,8 +75,6 @@ const Novias = () => {
           <button>¡Lo quiero!</button>
         </div>
       </div>
-
-
     </div>
   );
 };
