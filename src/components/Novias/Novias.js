@@ -9,7 +9,7 @@ import LineaA from "assets/images/linea-a.png";
 
 const Novias = () => {
   return (
-    <div className={styles.noviasContainer}>
+    <div id="novias" className={styles.noviasContainer}>
       <h2>El corte perfecto</h2>
       <div className={styles.dressLeft}>
         <img
@@ -24,7 +24,7 @@ const Novias = () => {
             ultricies pellentesque varius proin augue sed nulla porttitor
             tellus.
           </p>
-          <button>¡Lo quiero!</button>
+          <a href="#contact">¡Lo quiero!</a>
         </div>
       </div>
       <div className={styles.dressRight}>
@@ -40,7 +40,7 @@ const Novias = () => {
             ultricies pellentesque varius proin augue sed nulla porttitor
             tellus.
           </p>
-          <button>¡Lo quiero!</button>
+          <a href="#contact">¡Lo quiero!</a>
         </div>
       </div>
       <div className={styles.dressLeft}>
@@ -56,7 +56,7 @@ const Novias = () => {
             ultricies pellentesque varius proin augue sed nulla porttitor
             tellus.
           </p>
-          <button>¡Lo quiero!</button>
+          <a href="#contact">¡Lo quiero!</a>
         </div>
       </div>
       <div className={styles.dressRight}>
@@ -72,7 +72,7 @@ const Novias = () => {
             ultricies pellentesque varius proin augue sed nulla porttitor
             tellus.
           </p>
-          <button>¡Lo quiero!</button>
+          <a href="#contact">¡Lo quiero!</a>
         </div>
       </div>
     </div>

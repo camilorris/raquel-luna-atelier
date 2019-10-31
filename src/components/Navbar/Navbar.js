@@ -14,16 +14,13 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a href="#"> Inicio</a>
+              <a href="#novias">Novias</a>
             </li>
             <li>
-              <a href="#">Novias</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
+              <a href="#blog">Blog</a>
             </li>
             <li className={styles.reservar}>
-              <a href="#">Reservar</a>
+              <a href="#contact">Reservar</a>
             </li>
           </ul>
         </nav>
