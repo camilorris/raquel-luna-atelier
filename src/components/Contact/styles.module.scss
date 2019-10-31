@@ -1,8 +1,3 @@
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .contactContainer {
   max-width: 1235px;
   display: flex;
@@ -25,7 +20,41 @@ form {
     margin: 16px auto;
     position: relative;
     text-align: center;
-    opacity: 80%;
+    opacity: 0.8;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      label {
+        color: var(--color-dark-1);
+        font-family: var(--font-avenir-next-regular);
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      input,
+      select {
+        border: 3px solid var(--color-sky-1);
+        background-color: var(--color-cream-1);
+        height: 45px;
+        color: var(--color-dark-1);
+        font-family: var(--font-avenir-next-regular);
+        font-size: 20px;
+        padding: 5px;
+        opacity: 0.8;
+      }
+    }
   }
 
   .personalInfo {
@@ -67,35 +96,6 @@ form {
   }
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-
-  &:first-of-type {
-    margin-left: 0;
-  }
-
-  label {
-    color: var(--color-dark-1);
-    font-family: var(--font-avenir-next-regular);
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-
-  input,
-  select {
-    border: 3px solid var(--color-sky-1);
-    background-color: var(--color-cream-1);
-    height: 45px;
-    color: var(--color-dark-1);
-    font-family: var(--font-avenir-next-regular);
-    font-size: 20px;
-    padding: 5px;
-    opacity: 80%;
-  }
-}
-
 .messageSubmited {
   margin: 112px auto 0;
 
@@ -111,7 +111,7 @@ form {
     color: var(--color-dark-1);
     font-family: var(--font-avenir-next-regular);
     font-size: 25px;
-    opacity: 80%;
+    opacity: 0.8;
     text-align: center;
     margin-bottom: 100px;
   }
