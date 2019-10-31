@@ -14,17 +14,17 @@ const Footer = () => {
       <img className={styles.logo} src={Logo} alt="logo" />
       <ul className={styles.social}>
         <li>
-          <a href="https://www.facebook.com/RaquelLunaAtelier/">
+          <a target="blank" href="https://www.facebook.com/RaquelLunaAtelier/">
             <img src={FacebookIcon} alt="facebook icon" />
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/raquellunaatelier/">
+          <a target="blank" href="https://www.instagram.com/raquellunaatelier/">
             <img src={InstagramIcon} alt="instagram icon" />
           </a>
         </li>
         <li>
-          <a href="https://www.pinterest.com/23raqueldesign/">
+          <a target="blank" href="https://www.pinterest.com/23raqueldesign/">
             <img src={PinterestIcon} alt="pinterest icon" />
           </a>
         </li>

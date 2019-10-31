@@ -6,7 +6,7 @@ import Lace from "assets/images/lace.png";
 
 const Blog = () => {
   return (
-    <div className={styles.blogContainer}>
+    <div id="blog" className={styles.blogContainer}>
       <img src={Lace} alt="encaje" className={styles.lacePic} />
       <div className={styles.text}>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
