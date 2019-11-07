@@ -157,13 +157,18 @@
   }
 
   .sidebar {
+    @media (max-width: 1200px) {
+      display: flex;
+    }
+
+    display: none;
     background: var(--color-cream-1);
     position: absolute;
-    top: 50px;
+    top: 49px;
     width: 70%;
     right: -400px;
     transition: right 0.2s ease-in-out;
-    height: 100vh;
+    height: 617px;
     font-family: var(--font-avenir-next-medium);
     font-size: 20px;
     flex-direction: column;
@@ -188,7 +193,7 @@
     .icons {
       list-style-type: none;
       display: flex;
-      height: 25px;
+      height: 31px;
       margin: auto auto 20px 19px;
       padding: 0;
 

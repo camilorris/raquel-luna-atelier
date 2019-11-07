@@ -2,6 +2,10 @@
   max-width: 1280px;
   margin: 0 auto;
 
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+
   h2 {
     font-family: var(--font-miller-text-bold);
     color: var(--color-dark-1);
@@ -9,6 +13,11 @@
     margin-top: 94px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1200px) {
+      font-size: 41px;
+      margin: 36px auto 0;
+    }
   }
 
   h6 {
@@ -16,6 +25,11 @@
     color: var(--color-dark-1);
     font-size: 36px;
     margin: 98px 0 0 0;
+
+    @media (max-width: 1200px) {
+      font-size: 25px;
+      margin: 29px 0 0 0;
+    }
   }
 
   p {
@@ -24,6 +38,12 @@
     font-size: 30px;
     max-width: 464px;
     color: var(--color-dark-1);
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      max-width: 231px;
+      margin: 10px 0 0 0;
+    }
   }
 
   a {
@@ -39,78 +59,137 @@
     cursor: pointer;
     text-decoration: none;
 
-    &:hover {
-      background-color: var(--color-sky-2);
-      transform: translateY(-7px);
+    @media (min-width: 1200px) {
+      &:hover {
+        background-color: var(--color-sky-2);
+        transform: translateY(-7px);
+      }
     }
   }
-}
-
-.dressLeft {
-  display: flex;
-  margin: 151px auto 0;
-  position: relative;
-  max-width: 1061px;
-
-  &:before {
-    content: "";
-    width: 764px;
-    height: 622px;
-    border: 3px solid var(--color-sky-1);
-    position: absolute;
-    z-index: -10;
-    right: 0;
-    top: -46px;
-  }
-
-  .dressLeftImage {
-    max-width: 424px;
-  }
-
-  .textLeft {
+  .dressLeft {
     display: flex;
-    flex-direction: column;
-    margin-left: 89px;
+    margin: 151px auto 0;
+    position: relative;
+    max-width: 1061px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      margin-top: 32px;
+
+      &:nth-of-type(n + 2) {
+        margin-top: 75px;
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 764px;
+      height: 622px;
+      border: 3px solid var(--color-sky-1);
+      position: absolute;
+      z-index: -10;
+      right: 0;
+      top: -46px;
+
+      @media (max-width: 1200px) {
+        width: 317px;
+        height: 377px;
+        top: 150px;
+        left: calc(50% - 158px);
+      }
+    }
+
+    .dressLeftImage {
+      max-width: 424px;
+      @media (max-width: 1200px) {
+        width: 188px;
+        height: auto;
+        margin: auto;
+      }
+    }
+
+    .textLeft {
+      display: flex;
+      flex-direction: column;
+      margin-left: 89px;
+
+      @media (max-width: 1200px) {
+        margin: 10px auto 10px;
+      }
+    }
+
+    a {
+      align-self: flex-end;
+      margin: 53px 0 0 0;
+
+      @media (max-width: 1200px) {
+        font-size: 17px;
+        margin-top: 29px;
+        align-self: center;
+      }
+    }
   }
 
-  a {
-    align-self: flex-end;
-    margin: 53px 0 0 0;
-  }
-}
-
-.dressRight {
-  display: flex;
-  margin: 151px auto 0;
-  position: relative;
-  max-width: 1061px;
-  justify-content: flex-end;
-
-  &:before {
-    content: "";
-    width: 764px;
-    height: 622px;
-    border: 3px solid var(--color-sky-1);
-    position: absolute;
-    z-index: -10;
-    left: 0;
-    top: -46px;
-  }
-
-  .dressRightImage {
-    max-width: 424px;
-    order: 2;
-  }
-
-  .textRight {
+  .dressRight {
     display: flex;
-    flex-direction: column;
-    margin-right: 89px;
-    max-width: 464px;
-  }
+    margin: 151px auto 0;
+    position: relative;
+    max-width: 1061px;
+    justify-content: flex-end;
 
-  a {
-    align-self: flex-end;
-    margin: 53px 0 0 0;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      margin-top: 75px;
+    }
+
+    &:before {
+      content: "";
+      width: 764px;
+      height: 622px;
+      border: 3px solid var(--color-sky-1);
+      position: absolute;
+      z-index: -10;
+      left: 0;
+      top: -46px;
+
+      @media (max-width: 1200px) {
+        width: 317px;
+        height: 377px;
+        top: 150px;
+        left: calc(50% - 158px);
+      }
+    }
+
+    .dressRightImage {
+      max-width: 424px;
+      order: 2;
+
+      @media (max-width: 1200px) {
+        width: 188px;
+        height: auto;
+        margin: auto;
+        order: -1;
+      }
+    }
+
+    .textRight {
+      display: flex;
+      flex-direction: column;
+      margin-right: 89px;
+      max-width: 464px;
+      @media (max-width: 1200px) {
+        margin: 10px auto 10px;
+      }
+    }
+
+    a {
+      align-self: flex-end;
+      margin: 53px 0 0 0;
+      @media (max-width: 1200px) {
+        font-size: 17px;
+        margin-top: 29px;
+        align-self: center;
+      }
+    }
   }
 }

@@ -3,6 +3,11 @@
   max-width: 1280px;
   margin: 0 auto;
 
+  @media (max-width: 1200px) {
+    height: 411px;
+    width: 100%;
+  }
+
   .heroImage {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.301),
@@ -22,15 +27,42 @@
     top: 110px;
     left: 200px;
 
+    @media (max-width: 1200px) {
+      top: 56px;
+      left: 20px;
+      max-width: 335px;
+    }
+
     h1 {
       color: var(--color-cream-1);
       font-family: var(--font-miller-text-regular);
       font-size: 110px;
       font-weight: 400;
       margin: 0;
+
+      @media (max-width: 1200px) {
+        font-family: var(--font-miller-text-bold);
+        font-size: 40px;
+        font-weight: 700;
+      }
     }
 
-    a {
+    p {
+      color: var(--color-cream-1);
+      font-family: var(--font-avenir-next-regular);
+      font-size: 30px;
+      max-width: 508px;
+
+      @media (max-width: 1200px) {
+        font-family: var(--font-avenir-next-regular);
+        font-size: 18px;
+        text-align: right;
+        max-width: 278px;
+        margin: 74px 0 auto auto;
+      }
+    }
+
+    .reserva {
       color: var(--color-cream-1);
       background-color: var(--color-sky-1);
       font-family: var(--font-avenir-next-regular);
@@ -45,19 +77,25 @@
       text-decoration: none;
       display: inline-block;
 
-      &:hover {
-        background-color: var(--color-sky-2);
-        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
-        color: #fff;
-        transform: translateY(-7px);
+      @media (max-width: 1200px) {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        display: block;
+        border-radius: 0;
+        font-size: 25px;
       }
-    }
 
-    p {
-      color: var(--color-cream-1);
-      font-family: var(--font-avenir-next-regular);
-      font-size: 30px;
-      max-width: 508px;
+      &:hover {
+        @media (min-width: 1200px) {
+          background-color: var(--color-sky-2);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+          color: #fff;
+          transform: translateY(-7px);
+        }
+      }
     }
   }
 }

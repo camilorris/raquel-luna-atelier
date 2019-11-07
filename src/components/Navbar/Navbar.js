@@ -47,6 +47,7 @@ const Navbar = () => {
         >
           <span></span>
         </div>
+
         <div className={sidebarClassnames}>
           <ul className={styles.menuList}>
             <li>NOVIAS</li>

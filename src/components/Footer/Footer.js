@@ -30,7 +30,7 @@ const Footer = () => {
         </li>
       </ul>
       <p>© 2019 - Raquel Luna Atelier </p>
-      <a href="#" className={styles.andromeda}>
+      <a href="https://facebook.com" className={styles.andromeda}>
         Powered by Andromeda
       </a>
     </div>
