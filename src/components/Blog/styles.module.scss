@@ -4,6 +4,12 @@
   display: flex;
   margin: 150px auto 0;
 
+  @media (max-width: 1200px) {
+    max-width: 317px;
+    margin: 82px auto 0;
+    flex-direction: column;
+  }
+
   &:before {
     content: "";
     z-index: -10;
@@ -12,23 +18,42 @@
     height: 3px;
     position: absolute;
     top: 105px;
+
+    @media (max-width: 1200px) {
+      transform: rotate(90deg);
+      top: 350px;
+      left: 130px;
+    }
   }
 
   .lacePic {
     max-width: 557px;
     max-height: 833px;
+    @media (max-width: 1200px) {
+      width: 317px;
+      height: 429px;
+    }
   }
 
   .text {
     color: var(--color-dark-1);
     max-width: 462px;
     margin: 140px 0 115px 43px;
+
+    @media (max-width: 1200px) {
+      max-width: 317px;
+      margin: 19px 29px 0 0;
+    }
   }
 
   h4 {
     font-family: var(--font-miller-text-bold-italic);
     font-size: 40px;
     margin: 0;
+
+    @media (max-width: 1200px) {
+      font-size: 25px;
+    }
   }
 
   p {
@@ -36,6 +61,10 @@
     font-family: var(--font-avenir-next-regular);
     font-size: 30px;
     margin: 24px 0 0;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
   }
 
   a {
@@ -45,5 +74,10 @@
     font-size: 30px;
     display: block;
     margin-top: 110px;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      margin-top: 25px;
+    }
   }
 }

@@ -9,7 +9,9 @@ const Hero = () => {
         <div className={styles.heroText}>
           <h1>Diseñamos exclusivamente para ti</h1>
           <p>Vestidos de novia de alta costura hechos a la medida </p>
-          <a href="#contact">Reserva tu cita</a>
+          <a href="#contact" className={styles.reserva}>
+            Reserva tu cita
+          </a>
         </div>
       </div>
     </div>

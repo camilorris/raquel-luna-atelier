@@ -10,7 +10,7 @@ const Contact = () => {
 
   if (messageSubmited) {
     return (
-      <div className={styles.messageSubmited}>
+      <div id="#contact" className={styles.messageSubmited}>
         <h5>¡Tu mensaje ha sido enviado!</h5>
         <p>Nos comunicaremos contigo a la brevedad.</p>
       </div>

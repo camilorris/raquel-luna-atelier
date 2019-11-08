@@ -16,7 +16,9 @@ const Blog = () => {
           Nulla faucibus consectetur auctor. Mauris eget eros tincidunt,
           vulputate...
         </p>
-        <a href="google.com">LEER MÁS</a>
+        <a target="blank" href="https://www.facebook.com/RaquelLunaAtelier/">
+          LEER MÁS
+        </a>
       </div>
     </div>
   );
