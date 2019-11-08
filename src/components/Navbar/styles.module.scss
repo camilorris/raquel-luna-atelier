@@ -1,11 +1,21 @@
 .navbarContainer {
   color: var(--color-dark-1);
 
+  .blur {
+    background-color: rgba(0, 0, 0, 0.46);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+
   header {
     background-color: var(--color-cream-1);
     height: 104px;
     display: flex;
-    z-index: -20;
+    z-index: 0;
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
@@ -55,6 +65,7 @@
 
     &:hover {
       color: var(--color-sky-1);
+      cursor: pointer;
     }
   }
 
@@ -158,23 +169,37 @@
 
   .sidebar {
     @media (max-width: 1200px) {
+      position: absolute;
       display: flex;
+      width: 0%;
+
+      &.isOpen {
+        width: 70%;
+        right: 0;
+        z-index: 300;
+
+        .menuList {
+          display: flex;
+        }
+
+        .icons {
+          display: flex;
+        }
+      }
     }
 
     display: none;
     background: var(--color-cream-1);
-    position: absolute;
     top: 49px;
-    width: 70%;
-    right: -400px;
+    right: -70%;
     transition: right 0.2s ease-in-out;
-    height: 617px;
+    height: calc(100vh - 100px);
     font-family: var(--font-avenir-next-medium);
     font-size: 20px;
     flex-direction: column;
 
     .menuList {
-      display: flex;
+      display: none;
       flex-direction: column;
       list-style-type: none;
       margin: 30px auto 0 19px;
@@ -185,14 +210,9 @@
       }
     }
 
-    &.isOpen {
-      display: flex;
-      right: 0;
-    }
-
     .icons {
       list-style-type: none;
-      display: flex;
+      display: none;
       height: 31px;
       margin: auto auto 20px 19px;
       padding: 0;

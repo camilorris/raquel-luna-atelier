@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 
 import styles from "./styles.module.scss";
@@ -20,8 +20,18 @@ const Navbar = () => {
     [styles.isOpen]: sidebarIsOpen
   });
 
+  const toggleSidebar = () => {
+    setSidebarIsOpen(!sidebarIsOpen);
+  };
+
+  useEffect(() => {
+    sidebarIsOpen && (document.body.style.overflow = "hidden");
+    !sidebarIsOpen && (document.body.style.overflow = "unset");
+  }, [sidebarIsOpen]);
+
   return (
     <div className={styles.navbarContainer}>
+      {sidebarIsOpen && <div className={styles.blur}></div>}
       <header>
         <div className={styles.logo}>
           <img src={Logo} alt="logo-raquel-luna-atelier" />
@@ -39,20 +49,28 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <div
-          className={hamburgerMenuClassnames}
-          onClick={() => {
-            setSidebarIsOpen(!sidebarIsOpen);
-          }}
-        >
+
+        <div className={hamburgerMenuClassnames} onClick={toggleSidebar}>
           <span></span>
         </div>
 
         <div className={sidebarClassnames}>
           <ul className={styles.menuList}>
-            <li>NOVIAS</li>
-            <li>BLOG</li>
-            <li>RESERVA TU CITA</li>
+            <li>
+              <a onClick={toggleSidebar} href="#novias">
+                NOVIAS
+              </a>
+            </li>
+            <li>
+              <a onClick={toggleSidebar} href="#blog">
+                BLOG
+              </a>
+            </li>
+            <li>
+              <a onClick={toggleSidebar} href="#contact">
+                RESERVA TU CITA
+              </a>
+            </li>
           </ul>
           <ul className={styles.icons}>
             <li>
